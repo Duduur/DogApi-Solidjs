@@ -111,6 +111,6 @@ O *Vite* é uma ferramenta de build que:
 ---
 
 ## 📚 Documentação
-
+*[Slide Do Grupo](https://www.canva.com/design/DAGwEcwybZU/fpUdJfdO4fg62IZhavAXOQ/edit?utm_content=DAGwEcwybZU&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
 * [SolidJS](https://www.solidjs.com/)
 * [Vite](https://vitejs.dev/)
