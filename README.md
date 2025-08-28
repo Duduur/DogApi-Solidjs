@@ -16,7 +16,7 @@ npm -v
 
 Execute no terminal:
 
-sh
+
 npm create solid@latest
 
 
