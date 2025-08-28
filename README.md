@@ -1,37 +1,116 @@
-## Usage
+# 🚀 Passo a Passo: Instalação do SolidJS com Vite
 
-Those templates dependencies are maintained via [pnpm](https://pnpm.io) via `pnpm up -Lri`.
+## 📦 Pré-requisitos
+- Node.js (v16 ou superior) → [baixar aqui](https://nodejs.org/)  
+- npm (vem junto com o Node.js)  
 
-This is the reason you see a `pnpm-lock.yaml`. That being said, any package manager will work. This file can be safely be removed once you clone a template.
+Verifique se estão instalados:
+sh
+node -v
+npm -v
+`
 
-```bash
-$ npm install # or pnpm install or yarn install
-```
+---
 
-### Learn more on the [Solid Website](https://solidjs.com) and come chat with us on our [Discord](https://discord.com/invite/solidjs)
+## ⚡ Criando o Projeto
 
-## Available Scripts
+Execute no terminal:
 
-In the project directory, you can run:
+sh
+npm create solid@latest
 
-### `npm run dev` or `npm start`
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+---
 
-The page will reload if you make edits.<br>
+## 🛠️ Configuração Inicial
 
-### `npm run build`
+Responda às perguntas:
 
-Builds the app for production to the `dist` folder.<br>
-It correctly bundles Solid in production mode and optimizes the build for the best performance.
+1. *Nome do projeto*
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
+   
+   ? Where should we create your project?
+   → meu-projeto
+   
 
-## Deployment
+2. *TypeScript?*
 
-You can deploy the `dist` folder to any static host provider (netlify, surge, now, etc.)
+   
+   ? Would you like to use TypeScript?
+   → No (ou Yes, se preferir TS)
+   
 
-## This project was created with the [Solid CLI](https://github.com/solidjs-community/solid-cli)
-# DogApi-Solidjs
+3. *Escolher template*
+
+   
+   ? Which template would you like to use?
+   → solid + vite
+   
+
+---
+
+## ▶️ Rodando o Projeto
+
+Entre na pasta criada e instale as dependências:
+
+sh
+cd meu-projeto
+npm install
+
+
+Inicie o servidor de desenvolvimento:
+
+sh
+npm run dev
+
+
+---
+
+## 🌐 Acessando
+
+No terminal aparecerá algo como:
+
+
+Local: http://localhost:5173/
+
+
+Abra no navegador para ver sua aplicação SolidJS rodando.
+
+---
+
+## ✨ Estrutura Básica do Projeto
+
+* index.html → HTML principal
+* src/index.jsx → Arquivo de entrada do SolidJS
+* src/App.jsx → Componente principal da aplicação
+
+Exemplo simples em *App.jsx*:
+
+jsx
+function App() {
+  return (
+    <div style={{ padding: "20px", textAlign: "center" }}>
+      <h1 style={{ color: "blue" }}>Olá, SolidJS + Vite!</h1>
+    </div>
+  );
+}
+
+export default App;
+
+
+---
+
+## 🧩 O que é o Vite?
+
+O *Vite* é uma ferramenta de build que:
+
+* 🚀 Inicia o servidor rapidamente (hot reload instantâneo)
+* 📦 Faz o bundle do código para produção
+* 🔧 Compila JSX/TSX do SolidJS para JavaScript otimizado
+
+---
+
+## 📚 Documentação
+
+* [SolidJS](https://www.solidjs.com/)
+* [Vite](https://vitejs.dev/)
